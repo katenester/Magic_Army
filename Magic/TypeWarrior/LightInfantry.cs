@@ -21,4 +21,5 @@ class LightWarrior : IUnit,ICloneable
     {
         return attack;
     }
+    ////
 }
