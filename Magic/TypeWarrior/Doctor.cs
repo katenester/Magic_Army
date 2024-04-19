@@ -1,32 +1,8 @@
-class HeavyWarrior : IUnit
+class Doctor : IUnit
 {
-    int Health
+    public Doctor() : base IUnit()
     {
-        get
-        {
-            return 10;
-        }
-    }
-    int Attack
-    {
-        get
-        {
-            return 5;
-        }
-    }
-    int Cost
-    {
-        get
-        {
-            return 20;
-        }
-    }
-    int Defense
-    {
-        get
-        {
-            return 10;
-        }
+        cost = 1;
     }
     void GetHit(int strength)
     {
@@ -39,5 +15,10 @@ class HeavyWarrior : IUnit
     string ToString()
     {
         return string.Format($"Легкий Солдат. Здоровье: {Health} Сила: {Health} Стоимость: {Cost} Броня {Defence} )
+    }
+
+    int DoAttack()
+    {
+        return attack;
     }
 }
